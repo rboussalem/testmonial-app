@@ -1,0 +1,89 @@
+// EXTRA LARGE DEVICES
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+// LARGE DEVICES
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+// MEDIUM DEVICES
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+// SMALL DEVICES
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+// SMALL DEVICES
+@mixin xs {
+  @media (max-width: #{$screen-xs-max}) {
+    @content;
+  }
+}
+// Custom devices (Min)
+@mixin rwdmin($screen) {
+  @media (min-width: $screen+"px") {
+    @content;
+  }
+}
+// Custom devices (Max)
+@mixin rwdmax($screen) {
+  @media (max-width: $screen+"px") {
+    @content;
+  }
+}
+
+
+/* FLEXBOX MIXINS */
+@mixin flex($justify: flex-start, $align-items: stretch, $align-content: stretch, $direction: row, $wrap: nowrap) {
+  display: flex;
+	flex-direction: $direction;
+	flex-wrap: $wrap;
+	justify-content: $justify;
+	align-items: $align-items;
+	align-content: $align-content;
+}
+/* CSS GRID MIXINS */
+@mixin grid($columns, $gap: 0) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+
+/* PADDING */
+@mixin px($right: 0, $left: $right) {
+  padding-right: $right;
+  padding-left: $left;
+}
+
+@mixin py($top: 0, $bottom: $top) {
+  padding-top: $top;
+  padding-bottom: $bottom;
+}
+
+
+/* MARGINS */
+@mixin mx($right: 0, $left: $right) {
+  margin-right: $right;
+  margin-left: $left;
+}
+@mixin my($top: 0, $bottom: $top) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+
+/* Width + Height*/
+@mixin area($width: 100% , $height : $width) {
+  width: $width;
+  height: $height;
+}

@@ -1,0 +1,17 @@
+.notif {
+    margin-top: 2rem;
+    .notif-content {
+        margin: auto;
+        width: 50%;
+        background-color: chartreuse;
+        padding: 1rem 3rem;
+        border-radius: 10rem;
+        -webkit-border-radius: 10rem;
+        -moz-border-radius: 10rem;
+        -ms-border-radius: 10rem;
+        -o-border-radius: 10rem;
+        @include md {
+            width: 100%;
+        }
+    }
+}

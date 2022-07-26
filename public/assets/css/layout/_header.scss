@@ -1,0 +1,15 @@
+.header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #d0d0d0;
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        li {
+            button {
+                cursor: pointer;
+            }
+        }
+    }
+}

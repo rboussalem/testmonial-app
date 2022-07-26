@@ -1,0 +1,16 @@
+.errors {
+    margin-top: 2rem;
+    .errors-content {
+        ul {
+            width: 50%;
+            margin: auto;
+            @include md {
+                width: 100%;
+            }
+            li {
+                margin-bottom: 0.5rem;
+                color: red;
+            }
+        }
+    }
+}

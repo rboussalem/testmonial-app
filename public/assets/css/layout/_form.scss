@@ -1,0 +1,125 @@
+.form {
+    margin-top: 2rem;
+    .form-content {
+        .date {
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+            margin-bottom: 1.5rem;
+            @include md {
+                width: 100%;
+            }
+            span {
+                display: inline-block;
+                padding: 0.5rem 3rem;
+                background-color: burlywood;
+                border-radius: 10rem;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                -o-border-radius: 10rem;
+            }
+        }
+        form {
+            background-color: white;
+            margin-right: auto;
+            margin-left: auto;
+            width: 50%;
+            padding: 2rem 4rem;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            @include md {
+                width: 100%;
+            }
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 3rem;
+                .error {
+                    color: red;
+                    margin-bottom: 0.4rem;
+                    font-weight: 500;
+                    text-transform: none;
+                    width: 100%;
+                }
+                label {
+                    margin-bottom: 0.4rem;
+                    font-weight: 800;
+                    text-transform: uppercase;
+                    width: 100%;
+                }
+                .download {
+                    width: fit-content;
+                    background-color: wheat;
+                    padding: 0.5rem 3rem;
+                    border-radius: 10rem;
+                    -webkit-border-radius: 10rem;
+                    -moz-border-radius: 10rem;
+                    -ms-border-radius: 10rem;
+                    -o-border-radius: 10rem;
+                    &:hover {
+                        transform: scale(1.02);
+                        -webkit-transform: scale(1.02);
+                        -moz-transform: scale(1.02);
+                        -ms-transform: scale(1.02);
+                        -o-transform: scale(1.02);
+                    }
+                }
+                input {
+                    border: 1px solid #a6a6a6;
+                    padding: 1rem;
+                    width: 100%;
+                    background-color: #f1f1f1;
+                }
+                input[type="file"] {
+                    border: none;
+                    background-color: transparent;
+                }
+                textarea {
+                    border: 1px solid #a6a6a6;
+                    padding: 1rem;
+                    width: 100%;
+                    background-color: #f1f1f1;
+                }
+                .select {
+                    position: relative;
+                    width: 100%;
+                    select {
+                        appearance: none;
+                        border: none;
+                        width: 100%;
+                        border: 1px solid #a6a6a6;
+                        padding: 1rem;
+                        background-color: #f1f1f1;
+                    }
+                    i {
+                        position: absolute;
+                        top: 50%;
+                        right: 0.5rem;
+                        transform: translateY(-50%);
+                        -webkit-transform: translateY(-50%);
+                        -moz-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        -o-transform: translateY(-50%);
+                    }
+                }
+            }
+            button {
+                color: orange;
+                border: 2px solid orange;
+                background-color: transparent;
+                padding: 1rem 3rem;
+                width: fit-content;
+                font-weight: bold;
+                margin: auto;
+                cursor: pointer;
+                text-transform: uppercase;
+                &:hover {
+                    background-color: orange;
+                    color: white;
+                }
+            }
+        }
+    }
+}

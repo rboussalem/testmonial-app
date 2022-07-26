@@ -1,0 +1,41 @@
+.login {
+    .login-content {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        form {
+            width: 320px;
+            background-color: white;
+            padding: 2rem;
+            .form-group {
+                margin-bottom: 2.5rem;
+                label {
+                    margin-bottom: 1rem;
+                    width: 100%;
+                    font-weight: bold;
+                }
+                .password,
+                .email {
+                    width: 100%;
+                    padding: 0.5rem;
+                    background-color: #f1f1f1;
+                }
+                span {
+                    color: red;
+                }
+            }
+            button {
+                width: 100%;
+                text-align: center;
+                background-color: rosybrown;
+                border-radius: 10rem;
+                -webkit-border-radius: 10rem;
+                -moz-border-radius: 10rem;
+                -ms-border-radius: 10rem;
+                -o-border-radius: 10rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

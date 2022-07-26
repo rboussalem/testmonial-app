@@ -1,0 +1,40 @@
+* {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    @include lg {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+    }
+    @include md {
+        font-size: 1.5rem;
+        line-height: 2.7rem;
+    }
+    @include sm {
+        font-size: 1.4rem;
+        line-height: 2.45rem;
+    }
+    @include xs {
+        font-size: 1.2rem;
+        line-height: 2.2rem;
+    }
+}
+input,
+textarea,
+button,
+select,
+input::placeholder,
+textarea::placeholder {
+    font-size: 1.8rem;
+    @include lg {
+        font-size: 1.5rem;
+    }
+    @include md {
+        font-size: 1.5rem;
+    }
+    @include sm {
+        font-size: 1.4rem;
+    }
+    @include xs {
+        font-size: 1.2rem;
+    }
+}
